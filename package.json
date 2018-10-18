@@ -1,0 +1,23 @@
+{
+  "name": "hungerdb",
+  "version": "1.0.0",
+  "description": "Fill your tummy with the souls of your targets.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HashedDan/hungerdb.git"
+  },
+  "author": "Daniel Mangum",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HashedDan/hungerdb/issues"
+  },
+  "homepage": "https://github.com/HashedDan/hungerdb#readme",
+  "dependencies": {
+    "express": "^4.16.4",
+    "tabletop": "^1.5.2"
+  }
+}
