@@ -4,6 +4,7 @@
   "description": "Fill your tummy with the souls of your targets.",
   "main": "app.js",
   "scripts": {
+    "start": "node app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -19,5 +20,8 @@
   "dependencies": {
     "express": "^4.16.4",
     "tabletop": "^1.5.2"
+  },
+  "engines": {
+    "node": "9.4.0"
   }
 }
