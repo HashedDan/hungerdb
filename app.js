@@ -14,7 +14,11 @@ app.get('/:code', (req, res) => {
                        var element = data.find((assassin) => {
                             return assassin.code === req.params.code
                        })
-                       res.send(JSON.stringify(element))
+                       if (element != undefined) {
+                        res.send(JSON.stringify(element))
+                       } else {
+                           res.send(JSON.stringify({"target": "Not Found", "code": "Not Found", "target_pic": "https://media.giphy.com/media/pPctyj8ZEQ4G4/giphy.gif"}))
+                       }
                    },
                    simpleSheet: true } )
 })
