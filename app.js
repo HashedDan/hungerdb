@@ -8,7 +8,7 @@ var port = process.env.PORT || 5000
 app.use(cors())
 
 app.get('/', (req, res) => {
-    res.send("SEND ME YOUR CODES")
+    res.send(JSON.stringify({"target": "Not Found", "code": "Not Found", "target_pic": "https://tenor.com/PByj.gif"}))
 })
 
 app.get('/:code', (req, res) => {
@@ -20,7 +20,7 @@ app.get('/:code', (req, res) => {
                        if (element != undefined) {
                         res.send(JSON.stringify(element))
                        } else {
-                           res.send(JSON.stringify({"target": "Not Found", "code": "Not Found", "target_pic": "https://media.giphy.com/media/pPctyj8ZEQ4G4/giphy.gif"}))
+                           res.send(JSON.stringify({"target": "Not Found", "code": "Not Found", "target_pic": "https://tenor.com/PByj.gif"}))
                        }
                    },
                    simpleSheet: true } )
