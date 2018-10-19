@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/HashedDan/hungerdb#readme",
   "dependencies": {
+    "cors": "^2.8.4",
     "express": "^4.16.4",
     "tabletop": "^1.5.2"
   },

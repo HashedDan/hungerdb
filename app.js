@@ -1,8 +1,11 @@
 const express = require("express")
 const Tabletop = require("tabletop")
+const cors = require('cors')
 
 var app = express()
 var port = process.env.PORT || 5000
+
+app.use(cors())
 
 app.get('/', (req, res) => {
     res.send("SEND ME YOUR CODES")
