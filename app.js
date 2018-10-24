@@ -14,8 +14,9 @@ app.get('/', (req, res) => {
 app.get('/:code', (req, res) => {
     Tabletop.init( { key: 'https://docs.google.com/spreadsheets/d/1r0SBy6aZZ-Q3mPqCfgTuJ9WAHhVUa3xECY3_qcmEoRM/edit?usp=sharing',
                    callback: function(data, tabletop) {
+                       codeParam = req.params.code.toLowerCase().trim()
                        var element = data.find((assassin) => {
-                            return assassin.code === req.params.code
+                            return assassin.code === codeParam
                        })
                        if (element != undefined) {
                         res.send(JSON.stringify(element))
