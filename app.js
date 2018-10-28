@@ -16,7 +16,7 @@ app.get('/:code', (req, res) => {
                    callback: function(data, tabletop) {
                        codeParam = req.params.code.toLowerCase().trim()
                        var element = data.find((assassin) => {
-                            return assassin.code === codeParam
+                            return assassin.code.toLowerCase().trim() === codeParam
                        })
                        if (element != undefined) {
                         res.send(JSON.stringify(element))
